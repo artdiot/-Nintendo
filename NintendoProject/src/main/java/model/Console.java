@@ -1,4 +1,4 @@
-package metier;
+package model;
 
 public class Console {
 
