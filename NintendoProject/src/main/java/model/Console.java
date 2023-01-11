@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Console {
+abstract public class Console {
 
 	private String nom;
 	protected Double prix;
