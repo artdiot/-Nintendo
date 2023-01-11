@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 abstract public class Console {
 
-	private String nom;
+	protected String nom;
 	protected Double prix;
 	protected LocalDate dateSortie;
 
