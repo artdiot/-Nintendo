@@ -1,11 +1,33 @@
 package model;
 
+import java.time.LocalDate;
+
 public class Console {
 
 	private String nom;
+	protected Double prix;
+	protected LocalDate dateSortie;
 
-	public Console(String nom) {
+	public Console(String nom, Double prix, LocalDate dateSortie) {
 		this.nom = nom;
+		this.prix = prix;
+		this.dateSortie = dateSortie;
+	}
+
+	public Double getPrix() {
+		return prix;
+	}
+
+	public void setPrix(Double prix) {
+		this.prix = prix;
+	}
+
+	public LocalDate getDateSortie() {
+		return dateSortie;
+	}
+
+	public void setDateSortie(LocalDate dateSortie) {
+		this.dateSortie = dateSortie;
 	}
 
 	public String getNom() {
