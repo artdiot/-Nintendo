@@ -1,14 +1,26 @@
 package model;
 
+import java.util.List;
+
 public class Client {
 	
 	private String nom;
 	private String prenom;
+	private List<Achat> listeAchats;
 	
-	public Client(String nom, String prenom) {
+	public Client(String nom, String prenom, List<Achat> listeAchats) {
+		super();
 		this.nom = nom;
 		this.prenom = prenom;
+		this.listeAchats = listeAchats;
 	}
+	public List<Achat> getListeAchats() {
+		return listeAchats;
+	}
+	public void setListeAchats(List<Achat> listeAchats) {
+		this.listeAchats = listeAchats;
+	}
+
 	public String getNom() {
 		return nom;
 	}
@@ -23,7 +35,7 @@ public class Client {
 	}
 	@Override
 	public String toString() {
-		return "Client [nom=" + nom + ", prenom=" + prenom + "]";
+		return "Client [nom=" + nom + ", prenom=" + prenom + ", listeAchats=" + listeAchats + "]";
 	}
 	
 	
