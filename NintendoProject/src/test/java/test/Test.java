@@ -1,5 +1,8 @@
 package test;
 
+import java.time.LocalDate;
+
+import model.Achat;
 import model.Console;
 import model.Jeu;
 
@@ -12,7 +15,6 @@ public class Test {
 		Jeu j3 = new Jeu("Tales of Symphonia", c);
 		Jeu j4 = new Jeu("The Legend of Zelda : Wind Waker",c);
 		Jeu j5 = new Jeu("Resident Evil 4", c);
-		
 	}
 
 }
